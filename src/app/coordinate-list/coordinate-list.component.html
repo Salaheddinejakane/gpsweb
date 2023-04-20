@@ -1,0 +1,18 @@
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let coordinate of coordinates | async">
+    <td>{{ coordinate.id }}</td>
+    <td>{{ coordinate.latitude }}</td>
+    <td>{{ coordinate.longitude }}</td>
+    <td>{{ coordinate.description }}</td>
+  </tr>
+  </tbody>
+</table>
